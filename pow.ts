@@ -1,12 +1,10 @@
 const pow = (x: number, n: number) => {
     if (n < 0){
-        let positiveN = +n;
-
         const prevX = x
 
-        while (positiveN < 1){
+        while (n < -1){
             x = x * prevX
-            positiveN += 1
+            n += 1
         }
 
         console.log(x)
@@ -28,7 +26,7 @@ const pow = (x: number, n: number) => {
     return x
 }
 
-const result = pow(2, -1);
+const result = pow(2, -4);
 
 if(!result){
     console.log("Nepareizi ievades dati");

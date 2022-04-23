@@ -1,6 +1,12 @@
 def pow(x, n):
     if n < 0:
-        return None
+        prevX = x
+
+        while n < -1:
+            x = x * prevX
+            n += 1
+
+        return 1 / x;
 
     if n == 0:
         return 0
@@ -13,7 +19,7 @@ def pow(x, n):
 
     return x
 
-result = pow(4, 1)
+result = pow(2, -2)
 
 if result:
     print("Rezultāts: ", result)
