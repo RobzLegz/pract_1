@@ -13,7 +13,7 @@ const pow = (x: number, n: number) => {
     }
 
     if (n == 0){
-        return 0
+        return 1;
     }
 
     const prevX = x

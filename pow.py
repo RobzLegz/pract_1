@@ -9,7 +9,7 @@ def pow(x, n):
         return 1 / x;
 
     if n == 0:
-        return 0
+        return 1
 
     prev_x = x
 
