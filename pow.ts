@@ -7,8 +7,6 @@ const pow = (x: number, n: number) => {
             n += 1
         }
 
-        console.log(x)
-
         return 1 / x;
     }
 
